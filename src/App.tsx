@@ -1,11 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-import { Intro } from './components/intro';
+import { NavBarItem, Navbar } from './components/navbar';
+import { Content } from './components/content';
 
 function App() {
+  const [active, setActive] = useState<NavBarItem>('Character');
   return (
-    <Intro />
+    <>
+      <Navbar onActiveChange={setActive} active={active}/>
+      <Content activeItem={active} />
+    </>
   );
 }
 
