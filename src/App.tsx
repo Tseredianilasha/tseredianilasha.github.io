@@ -7,8 +7,8 @@ function App() {
   const [active, setActive] = useState<NavBarItem>('Character');
   return (
     <>
-      <Navbar onActiveChange={setActive} active={active}/>
-      <Content activeItem={active} />
+      <Navbar onActiveChange={setActive} />
+      {/* <Content activeItem={active} /> */}
     </>
   );
 }

@@ -7,7 +7,7 @@ import scroll from '../images/scroll.png';
 import pentagram from '../images/pentagram.png';
 import occult from '../images/occult.png';
 
-const iconStyle = 'h-9 w-9'
+const iconStyle = 'h-14 w-14'
 
 export const ComponentMap: Record<NavBarItem, {element: React.FC, icon?: ReactNode}> = {
   'Character': {
